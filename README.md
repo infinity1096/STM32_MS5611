@@ -2,12 +2,15 @@
  STM32 driver for air pressure sensor MS5611
  
 ## Usage:
+
+First, replace the delay(ms) function in ms5611.c with equivlent one.
+
+Then,
 ```
 #include "ms5611.h"
 
 ...
 
-systickInit();
 ms5611_set_i2c(&hi2c1);
 
 ...
